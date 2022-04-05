@@ -1,15 +1,14 @@
-
-// use tutorial::Interpreter;
+use tutorial::FooBar;
 use tutorial::Dog;
 
 fn main() {
-    let d = Dog;
-    d.bark()
+    let dog = Dog;
+    dog.bark();
     
-}
-
-#[test]
-fn basic_test() {
-    // let mut i = Interpreter;
-    // assert_eq!(i.input("1 + 1"), Ok(Some(2.0)));
+    let foobar: Option<FooBar> = Some (FooBar::Bar);
+    match foobar {
+        Some(FooBar::Foo) => { println!("Foo") }
+        Some(FooBar::Bar) => { println!("Bar") }
+        _ => { println!("None") }
+    }
 }

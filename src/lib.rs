@@ -1,5 +1,4 @@
 pub struct Dog;
-pub struct Interpreter;
 
 impl Dog {
     pub fn bark(&self) {
@@ -7,8 +6,7 @@ impl Dog {
     }
 }
 
-impl Interpreter {
-    pub fn input() {
-
-    }
+pub enum FooBar {
+    Foo,
+    Bar,
 }
